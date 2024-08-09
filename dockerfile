@@ -7,7 +7,7 @@ WORKDIR /usr/share/nginx/html
 COPY . .
 
 # Expose port 80 for HTTP traffic
-EXPOSE 80
+EXPOSE 8080
 
 # Start the Nginx server when the container launches
 CMD ["nginx", "-g", "daemon off;"]

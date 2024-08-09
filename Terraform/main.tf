@@ -56,7 +56,7 @@ resource "google_cloudbuild_trigger" "my_trigger" {
       name = "gcr.io/cloud-builders/docker" 
       args = ["push", "${google_artifact_registry_repository.my_repo.location}-docker.pkg.dev/${var.project_id}/${google_artifact_registry_repository.my_repo.repository_id}/my-website-image:latest"] 
     } 
-    images = ["gcr.io/${var.project_id}/my-website-repo/my-website-image:latest"]
+    images = ["${google_artifact_registry_repository.my_repo.location}-docker.pkg.dev/${var.project_id}/${google_artifact_registry_repository.my_repo.repository_id}/my-website-image:latest"]
 
   }
 
