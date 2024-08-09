@@ -1,0 +1,5 @@
+project_id = "solutions-engineering-312710"
+region     = "us-central1"
+service_account_key_file = "C:/Users/XX/Downloads/solutions-engineering-312710-8d5809660e30.json"
+github_owner = "harshbhardwaj77"
+github_repo  = "GCP-Repo"
