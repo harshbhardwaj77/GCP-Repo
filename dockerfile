@@ -6,7 +6,7 @@ WORKDIR /usr/share/nginx/html
 
 # Copy the contents of your HTML project to the container
 COPY . .
-
+#Trigger it
 # Expose port 8080 for HTTP traffic
 EXPOSE 8080
 
